@@ -2,9 +2,8 @@
   "name": "parcel-nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel serve ./src/index.html",
+    "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html"
   },
   "repository": {
@@ -19,7 +18,7 @@
   },
   "homepage": "https://github.com/Evany226/parcel-nodejs#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0-beta.2",
-    "parcel": "^2.0.0-beta.2"
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0"
   }
 }
