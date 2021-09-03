@@ -24,6 +24,7 @@
   position: fixed;
   background-color: color(primary-text-color);
   transition: 200ms ease;
+  z-index: 1;
 }
 
 .navbar-nav {
@@ -67,7 +68,7 @@
 }
 
 //smaller devices only
-@media only screen and (max-width: 600px) {
+@include mobile {
   .navbar {
     bottom: 0;
     width: 100vw;
@@ -85,6 +86,11 @@
   .nav-link {
     justify-content: center;
   }
+
+  .main-container {
+    margin-left: 0rem;
+    margin-bottom: 6rem;
+  }
 }
 
 //larger devices only
@@ -101,5 +107,9 @@
 
   .navbar:hover .link-text {
     display: block;
+  }
+
+  .main-container {
+    margin-left: 6rem;
   }
 } ;
