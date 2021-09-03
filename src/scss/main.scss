@@ -45,5 +45,10 @@ body::-webkit-scrollbar-thumb {
 
 .main-info {
   font-size: 1.2rem;
-  padding: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .main-container {
+    margin: 0;
+  }
 }

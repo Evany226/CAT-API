@@ -1,7 +1,6 @@
 {
   "name": "parcel-nodejs",
   "version": "1.0.0",
-  "description": "",
   "scripts": {
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html"
@@ -20,5 +19,8 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-rc.0",
     "parcel": "^2.0.0-rc.0"
-  }
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "description": ""
 }

@@ -1,3 +1,7 @@
+@import "_mixins.scss";
+
+@import "_palette.scss";
+
 .logo {
   font-weight: bold;
   text-transform: uppercase;
@@ -80,10 +84,6 @@
 
   .nav-link {
     justify-content: center;
-  }
-
-  .main-container {
-    margin: 0rem;
   }
 }
 
