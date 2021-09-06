@@ -52,28 +52,26 @@ body::-webkit-scrollbar-thumb {
   width: 88vw;
 }
 
-.game-card {
+.item-card {
   position: relative;
-  width: 15vw;
+  width: 20vw;
   height: 40vh;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
 }
 
-.game-card-front {
+.item-card-front {
   position: absolute;
   height: 100%;
   width: 100%;
-  backface-visibility: hidden;
 }
 
-.game-card-back {
+.item-card-back {
   position: absolute;
   height: 100%;
   width: 100%;
-  backface-visibility: hidden;
   transform: rotateY(180deg);
-  background-color: white;
+  backface-visibility: hidden;
 }
 
 .image {
