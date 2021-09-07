@@ -50,6 +50,8 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   background-color: red;
   width: 88vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .item-card {
