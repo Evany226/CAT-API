@@ -16,7 +16,7 @@ const myHeaders = new Headers({
 const query = async function () {
   try {
     const response = await fetch(
-      `https://api.thecatapi.com/v1/images/search?limit=5&page=1&order=DESC`
+      `https://api.thecatapi.com/v1/images/search?limit=10&page=1`
     );
     const data = await response.json();
     console.log(data);
@@ -25,7 +25,7 @@ const query = async function () {
         "beforeend",
         `<div class="item-card" id="card">
         <div class="item-card-front">
-            <img src="${cats.url}" alt="" class="image" crossOrigin="anonymous">
+            <img src="${cats.url}" alt="" class="image">
         </div>
         <div class="item-card-back">
         </div>
