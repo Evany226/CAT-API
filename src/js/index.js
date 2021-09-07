@@ -16,7 +16,7 @@ const myHeaders = new Headers({
 const query = async function () {
   try {
     const response = await fetch(
-      `https://api.thecatapi.com/v1/images/search?limit=28&page=1`
+      `https://api.thecatapi.com/v1/images/search?limit=24&page=1`
     );
     const data = await response.json();
     console.log(data);

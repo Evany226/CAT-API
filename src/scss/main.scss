@@ -32,6 +32,7 @@ body::-webkit-scrollbar-thumb {
 
 .main-container {
   text-align: center;
+  @include flex-column-center;
 }
 
 .main-title {
@@ -48,9 +49,8 @@ body::-webkit-scrollbar-thumb {
 
 .item-grid {
   padding: 1.5rem;
-  position: absolute;
   background-color: color(secondary-text-color);
-  width: 88vw;
+  width: 84vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -64,16 +64,15 @@ body::-webkit-scrollbar-thumb {
   transform-style: preserve-3d;
   transition: all 0.8s ease;
   margin: 1.5rem;
+  border: 0.2rem solid color(primary-text-color);
 }
 
 .item-card-front {
-  position: absolute;
   height: 100%;
   width: 100%;
 }
 
 .item-card-back {
-  position: absolute;
   height: 100%;
   width: 100%;
   transform: rotateY(180deg);
@@ -83,9 +82,19 @@ body::-webkit-scrollbar-thumb {
 .image {
   width: 100%;
   height: 100%;
-  border: 0.2rem solid color(primary-text-color);
 }
 
 .flipCard {
   transform: rotateY(180deg);
+}
+
+@include mobile {
+  .item-card {
+    width: 60vh;
+    height: 30vh;
+  }
+
+  .item-grid {
+    width: 75vw;
+  }
 }

@@ -40,10 +40,6 @@
   width: 100%;
 }
 
-.nav-item:last-child {
-  margin-top: auto;
-}
-
 .nav-link {
   @include flex-row-center;
   height: 5rem;
