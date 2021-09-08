@@ -64,7 +64,7 @@
 }
 
 //smaller devices only
-@include mobile {
+@media only screen and (max-width: 600px) {
   .navbar {
     bottom: 0;
     width: 100vw;
