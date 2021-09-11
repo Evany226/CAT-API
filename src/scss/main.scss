@@ -4,6 +4,8 @@
 
 @import "_navbar.scss";
 
+@import "_search.scss";
+
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -48,7 +50,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .item-grid {
-  padding: 1.5rem;
   background-color: color(secondary-text-color);
   width: 84vw;
   display: flex;
@@ -58,7 +59,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .item-card {
-  position: relative;
   width: 17vw;
   height: 34vh;
   transform-style: preserve-3d;

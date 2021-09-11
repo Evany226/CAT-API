@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/main.scss">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            
+            <li class="logo">
+                <a href="" class="nav-link">
+                    <span class="link-text">Menu</span>
+                    <i class="fas fa-angle-double-right"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-cat"></i>
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="search.html" class="nav-link">
+                    <i class="fas fa-search"></i>
+                    <span class="link-text">Search</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="" class="nav-link">
+                    <i class="fas fa-cloud-moon"></i>
+                    <span class="link-text">Dark</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+        <h1 class="search-header">Search</h1>
+        <form id="search-form" class="search-form">
+          <textarea
+            name="search-area"
+            id="search-area"
+            placeholder="Type to search"
+          ></textarea>  
+          <input type="submit" class="submit-button" />
+        </form>
+        <section class="main-container">
+        <div class="item-grid"></div>
+        </section>
+        <script type="module" src="js/search.js"></script>
+
+</body>
+</html>
