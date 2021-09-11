@@ -12,7 +12,7 @@ const listen = function () {
     const searchQuery = async function () {
       try {
         const response = await fetch(
-          `https://api.thecatapi.com/v1/images/search?breed_ids=${searchParams}`
+          `https://api.thecatapi.com/v1/breeds/search?q=${searchParams}`
         );
         const data = await response.json();
         console.log(data);
