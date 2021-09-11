@@ -24,6 +24,5 @@
   "dependencies": {
     "cors": "^2.8.5"
   },
-  "main": "index.js",
   "description": ""
 }
