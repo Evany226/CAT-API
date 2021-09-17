@@ -44,18 +44,23 @@
         </ul>
     </nav>
 
-        <h1 class="search-header">Search</h1>
-        <form id="search-form" class="search-form">
-          <textarea
-            name="search-area"
-            id="search-area"
-            placeholder="Type to search"
-          ></textarea>  
-          <input type="submit" class="submit-button" />
-        </form>
-        <section class="main-container">
-        <div class="item-grid"></div>
-        </section>
+    <section class="search-page"> 
+        <h1 class="search-header">Search for specific cat breeds</h1>
+        <h2 class="search-info">Enter shortened versions of the breed name or else the results won't appear i.e. Bengal becomes Beng, Siamese becomes Siam</h2>
+        
+            <form id="search-form" class="search-form">
+                <textarea
+                    name="search-area"
+                    id="search-area"
+                    placeholder="Type to search"
+                ></textarea>  
+                <input type="submit" class="submit-button" />
+            </form>
+
+            <section class="second-container">
+                <div class="item-grid"></div>
+            </section>
+    </section>  
         <script type="module" src="js/search.js"></script>
 
 </body>

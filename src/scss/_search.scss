@@ -1,3 +1,15 @@
+.search-page {
+  @include flex-column-center;
+  margin-left: 4rem;
+}
+
+.search-info {
+  font-size: 1.8rem;
+  max-width: 80vw;
+  font-weight: 100;
+  text-align: center;
+}
+
 .search-header {
   font-size: 3rem;
   margin: 2rem auto 3rem auto;
@@ -21,8 +33,8 @@
   margin: 2rem auto;
 }
 #search-area {
-  width: 30vw;
-  height: 10vh;
+  width: 60vw;
+  height: 25vh;
   font-size: 1.5rem;
   margin: 3rem auto;
 }
@@ -34,4 +46,49 @@
   background-color: color(primary-text-color);
   color: white;
   font-weight: 300;
+}
+
+@include largetablet {
+  #search-area {
+    width: 70vw;
+    height: 15vh;
+  }
+
+  .search-form {
+    width: 80vw;
+  }
+}
+
+@include tablet {
+  #search-area {
+    width: 70vw;
+  }
+
+  .search-form {
+    width: 80vw;
+  }
+}
+
+@include mobile {
+  #search-area {
+    width: 75vw;
+  }
+
+  .search-form {
+    width: 80vw;
+  }
+
+  .search-header {
+    font-size: 2.5rem;
+  }
+
+  .search-info {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .search-page {
+    margin-left: 0rem;
+  }
 }
