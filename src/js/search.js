@@ -16,7 +16,7 @@ const listen = function () {
         );
         const data = await response.json();
         console.log(data);
-        data.breeds.forEach((cats) => {
+        data.forEach((cats) => {
           DOMSelectors.grid.insertAdjacentHTML(
             "beforeend",
             `                    <img src="${cats.url}" alt="" class="search-image">
