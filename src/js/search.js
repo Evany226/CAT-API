@@ -19,13 +19,20 @@ const listen = function () {
         data.forEach((cats) => {
           DOMSelectors.grid.insertAdjacentHTML(
             "beforeend",
-            `<div class="item-card" id="card">
-              <div class="item-card-front">
-                  <img src="${cats.url}" alt="" class="image">
-              </div>
-              <div class="item-card-back">
-              </div>
-      </div>`
+            `                    <img src="${cats.url}" alt="" class="search-image">
+            <h3 class="search-name">${cats.name}</h3>
+
+
+                <p class="search-title">Origin:</p>
+                <p class="search-subtitle">${cats.origin}</p>
+
+
+                <p class="search-title">Description:</p>
+                <p class="search-subtitle">${cats.description}.</p>
+
+
+                <p class="search-title">Traits:</p>
+                <p class="search-subtitle">${cats.temperament}</p>`
           );
         });
       } catch (error) {
