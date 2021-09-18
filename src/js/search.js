@@ -27,9 +27,7 @@ const listen = function () {
         data[0].breeds.forEach((cats) => {
           DOMSelectors.grid.insertAdjacentHTML(
             "beforeend",
-            `<img src="${cats.url}" alt="" class="search-image">
-            <h3 class="search-name">${cats.name}</h3>
-
+            `<h3 class="search-name">${cats.name}</h3>
 
                 <p class="search-title">Origin:</p>
                 <p class="search-subtitle">${cats.origin}</p>
