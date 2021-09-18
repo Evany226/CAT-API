@@ -16,10 +16,18 @@ const listen = function () {
         );
         const data = await response.json();
         console.log(data);
+
+        data.forEach((cats) => {
+          DOMSelectors.grid.insertAdjacentHTML(
+            "beforeend",
+            `<img src="${cats.url}" alt="" class="search-image">`
+          );
+        });
+
         data[0].breeds.forEach((cats) => {
           DOMSelectors.grid.insertAdjacentHTML(
             "beforeend",
-            `                    <img src="${cats.url}" alt="" class="search-image">
+            `<img src="${cats.url}" alt="" class="search-image">
             <h3 class="search-name">${cats.name}</h3>
 
 
