@@ -100,6 +100,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 @include tablet {
+  html {
+    font-size: 80%;
+  }
+
   .item-card {
     width: 30vw;
     height: 20vh;
@@ -111,6 +115,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 @include mobile {
+  html {
+    font-size: 60%;
+  }
+
   .item-card {
     width: 60vw;
     height: 30vh;
@@ -118,6 +126,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 @include small {
+  html {
+    font-size: 50%;
+  }
+
   .item-card {
     width: 60vw;
     height: 30vh;
