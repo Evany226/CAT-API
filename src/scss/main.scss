@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: color(primary-colo);
+  background-color: color(accent-color);
   margin: 0;
   padding: 0;
 }
@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .item-grid {
-  background-color: color(accent-color);
+  background-color: color(secondary-text-color);
   width: 84vw;
   display: flex;
   flex-wrap: wrap;
